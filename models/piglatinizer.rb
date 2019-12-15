@@ -21,7 +21,7 @@ class PigLatinizer
         end
     
         new_sentence = pig_latinized_words.join(" ")
-        binding.pry
+
       end
     
       def begins_with_vowel
