@@ -15,15 +15,14 @@ class PigLatinizer
       def to_pig_latin(sentence)
         words_in_sentence = sentence.split(" ")
     
-        pig_latinized_words = words_in_sentence.collect do |word|
+        @pig_latinized_word = words_in_sentence.collect do |word|
           self.piglatinize(word)
-         
-        end
-    
-        new_sentence = pig_latinized_words.join(" ")
-
       end
     
+        new_sentence = @pig_latinized_word.join(" ")
+    
+      end
+      
       def begins_with_vowel
         vowel_word = @new_word << "way"
       end
